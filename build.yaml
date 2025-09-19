@@ -1,0 +1,15 @@
+targets:
+  $default:
+    builders:
+      metaprogramacao_estatica|getters:
+        enabled: true
+        generate_for:
+          - lib/**
+
+builders:
+  getters:
+    import: "package:metaprogramacao_estatica/generators/getters_generator.dart"
+    builder_factories: ["gettersBuilder"]
+    build_extensions: { ".dart": [".g.dart"] }
+    auto_apply: dependents
+    build_to: source

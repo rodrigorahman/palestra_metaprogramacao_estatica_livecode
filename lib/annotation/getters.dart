@@ -1,0 +1,3 @@
+class Getters {
+  const Getters();
+}
