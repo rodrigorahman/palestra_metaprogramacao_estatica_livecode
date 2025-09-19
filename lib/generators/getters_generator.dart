@@ -45,7 +45,7 @@ class GettersGenerator extends GeneratorForAnnotation<Getters> {
       buffer.writeln(
         '/// Getter gerado automaticamente para o campo privado $fieldName',
       );
-      buffer.writeln('  $fieldType get $getterName => $fieldName');
+      buffer.writeln('  $fieldType get $getterName => $fieldName;');
       buffer.writeln();
     }
     buffer.writeln('}');
